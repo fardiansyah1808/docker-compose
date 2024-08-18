@@ -1,0 +1,14 @@
+# version: '3.8'
+
+services:
+  nginx-example:
+    container_name: nginx-example
+    image: nginx:latest
+    ports:
+      - 8080:80
+  nginx-example-2:
+    container_name: nginx-example-2
+    image: nginx:latest
+    ports:
+      - 8081:80
+

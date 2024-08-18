@@ -1,0 +1,20 @@
+firstName: Fardi
+lastName: Ansyah
+age: 26
+hobbies:
+  - Coding
+  - Reading
+  - Gaming
+  - Watching Anime
+address:
+  street: Jl. Mangga dua dalam
+  city: Jakarta Pusat
+  zipcode: 10730
+  country: Indonesia
+wallet:
+  - type: cash
+    balance: 1000000
+  - type: debit
+    balance: 1000000
+  - type: credit
+    balance: 10000
