@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  mongo1:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=admin
+    volumes:
+      - ./data:/data/db:rw
+  mongo2:
+    image: mongo:latest
+    ports:
+      - 27018:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=admin
+    volumes:
+      - type: bind
+        source: ./data2
+        target: /data/db
+        read_only: false

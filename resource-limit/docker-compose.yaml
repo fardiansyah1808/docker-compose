@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  nginx-example:
+    image: nginx
+    container_name: nginx-example
+    ports:
+      - 8080:80
+    deploy:
+      resources:
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+        limits:
+          cpus: "0.5"
+          memory: 512M
